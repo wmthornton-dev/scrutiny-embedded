@@ -25,13 +25,11 @@ namespace scrutiny
     class Endianness
     {
       public:
-        // clang-format off
         SCRUTINY_ENUM(eEndianness, uint_least8_t)
         {
             LITTLE = ctypes::SCRUTINY_C_ENDIANNESS_LITTLE,
             BIG = ctypes::SCRUTINY_C_ENDIANNESS_BIG
         };
-        // clang-format on
     };
 
     /// @brief Represents an address range with a start an a end.
@@ -44,7 +42,6 @@ namespace scrutiny
     class VariableTypeType
     {
       public:
-        // clang-format off
         SCRUTINY_ENUM(eVariableTypeType, uint_least8_t)
         {
             _sint = ctypes::SCRUTINY_C_VARIABLE_TYPE_TYPE_sint,
@@ -54,14 +51,12 @@ namespace scrutiny
             _cfloat = ctypes::SCRUTINY_C_VARIABLE_TYPE_TYPE_cfloat,
             _undef = ctypes::SCRUTINY_C_VARIABLE_TYPE_TYPE_undef
         };
-        // clang-format on
     };
 
     /// @brief Represent a type size
     class VariableTypeSize
     {
       public:
-        // clang-format off
         SCRUTINY_ENUM(eVariableTypeSize, uint_least8_t)
         {
             _8 = ctypes::SCRUTINY_C_VARIABLE_TYPE_SIZE_8,
@@ -72,14 +67,12 @@ namespace scrutiny
             _256 = ctypes::SCRUTINY_C_VARIABLE_TYPE_SIZE_256,
             _undef = ctypes::SCRUTINY_C_VARIABLE_TYPE_SIZE_undef
         };
-        // clang-format on
     };
 
     /// @brief  Represent a datatype. Must match the python core module enum
     class VariableType
     {
       public:
-        // clang-format off
         SCRUTINY_ENUM(eVariableType, uint_least8_t)
         {
             sint8 = ctypes::SCRUTINY_C_VARIABLE_TYPE_sint8,
@@ -104,7 +97,6 @@ namespace scrutiny
 #endif
             unknown = ctypes::SCRUTINY_C_VARIABLE_TYPE_unknown
         };
-        // clang-format on
     };
 
     /// @brief Union structure to pass any type of data to a function.

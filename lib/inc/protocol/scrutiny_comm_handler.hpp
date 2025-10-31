@@ -142,7 +142,6 @@ namespace scrutiny
             class RxFSMState
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eRxFSMState, uint_least8_t)
                 {
                     WaitForCommand,
@@ -153,20 +152,17 @@ namespace scrutiny
                     WaitForProcess,
                     Error
                 };
-                // clang-format on
             };
 
             class State
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eState, uint_least8_t)
                 {
                     Idle,
                     Receiving,
                     Transmitting
                 };
-                // clang-format on
             };
 
             void reset_rx();

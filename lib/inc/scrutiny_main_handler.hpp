@@ -201,14 +201,12 @@ namespace scrutiny
         class DataloggingError
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eDataloggingError, uint_least8_t)
             {
                 NoError,
                 UnexpectedRelease,
                 UnexpectedClaim
             };
-            // clang-format on
         };
 
         struct ThreadSafeData

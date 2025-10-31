@@ -56,7 +56,6 @@ namespace scrutiny
         class CommandId
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eCommandId, uint_least8_t)
             {
                 GetInfo = 0x01,
@@ -65,13 +64,11 @@ namespace scrutiny
                 UserCommand = 0x04,
                 DataLogControl = 0x05
             };
-            // clang-format on
         };
 
         class ResponseCode
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eResponseCode, uint_least8_t)
             {
                 OK = 0,
@@ -84,13 +81,11 @@ namespace scrutiny
                 NoResponseToSend = 0xFE,
                 ProcessAgain = 0xFF
             };
-            // clang-format on
         };
 
         class RxError
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eRxError, uint_least8_t)
             {
                 None,
@@ -98,13 +93,11 @@ namespace scrutiny
                 Disabled,
                 InvalidCommand
             };
-            // clang-format on
         };
 
         class TxError
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eTxError, uint_least8_t)
             {
                 None,
@@ -112,7 +105,6 @@ namespace scrutiny
                 Busy,
                 Disabled
             };
-            // clang-format on
         };
 
         struct Version
@@ -126,7 +118,6 @@ namespace scrutiny
             class Subfunction
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eSubfunction, uint_least8_t)
                 {
                     GetprotocolVersion = 1,
@@ -139,19 +130,16 @@ namespace scrutiny
                     GetLoopCount = 8,
                     GetLoopDefinition = 9
                 };
-                // clang-format on
             };
 
             class MemoryRegionType
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eMemoryRegionType, uint_least8_t)
                 {
                     ReadOnly = 0,
                     Forbidden = 1
                 };
-                // clang-format on
             };
         } // namespace GetInfo
 
@@ -163,7 +151,6 @@ namespace scrutiny
             class Subfunction
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eSubfunction, uint_least8_t)
                 {
                     Discover = 1,
@@ -172,7 +159,6 @@ namespace scrutiny
                     Connect = 4,
                     Disconnect = 5
                 };
-                // clang-format on
             };
         } // namespace CommControl
 
@@ -181,7 +167,6 @@ namespace scrutiny
             class Subfunction
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eSubfunction, uint_least8_t)
                 {
                     Read = 1,
@@ -190,7 +175,6 @@ namespace scrutiny
                     ReadRPV = 4,
                     WriteRPV = 5
                 };
-                // clang-format on
             };
         } // namespace MemoryControl
 
@@ -199,7 +183,6 @@ namespace scrutiny
             class Subfunction
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eSubfunction, uint_least8_t)
                 {
                     GetSetup = 1,
@@ -211,7 +194,6 @@ namespace scrutiny
                     ReadAcquisition = 7,
                     ResetDatalogger = 8
                 };
-                // clang-format on
             };
         } // namespace DataLogControl
 

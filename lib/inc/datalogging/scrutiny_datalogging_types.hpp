@@ -33,12 +33,10 @@ namespace scrutiny
         class EncodingType
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eEncodingType, uint_least8_t)
             {
                 RAW
             };
-            // clang-format on
         };
 
         union AnyTypeCompare
@@ -51,20 +49,17 @@ namespace scrutiny
         class VariableTypeCompare
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eVariableTypeCompare, uint_least8_t)
             {
                 _float = static_cast<int>(scrutiny::VariableType::float32),
                 _uint = static_cast<int>(scrutiny::BiggestUint),
                 _sint = static_cast<int>(scrutiny::BiggestSint)
             };
-            // clang-format on
         };
 
         class OperandType
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eOperandType, uint_least8_t)
             {
                 LITERAL = 0,
@@ -72,7 +67,6 @@ namespace scrutiny
                 VARBIT = 2,
                 RPV = 3
             };
-            // clang-format on
         };
 
         union OperandData
@@ -108,7 +102,6 @@ namespace scrutiny
         class SupportedTriggerConditions
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eSupportedTriggerConditions, uint_least8_t)
             {
                 AlwaysTrue = 0,         // Always true
@@ -121,7 +114,6 @@ namespace scrutiny
                 ChangeMoreThan = 7,     // |Operand1[n] - Operand1[n-1]| > |Operand2| && sign(Operand1[n] - Operand1[n-1]) == sign(Operand2)
                 IsWithin = 8            // |Operand1 - Operand2| < |Operand3|
             };
-            // clang-format on
         };
 
         struct TriggerConfig
@@ -149,14 +141,12 @@ namespace scrutiny
         class LoggableType
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eLoggableType, uint_least8_t)
             {
                 MEMORY = 0,
                 RPV = 1,
                 TIME = 2
             };
-            // clang-format on
         };
         struct LoggableItem
         {

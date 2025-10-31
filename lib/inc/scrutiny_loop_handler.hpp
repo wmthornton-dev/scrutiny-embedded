@@ -27,13 +27,11 @@ namespace scrutiny
     class LoopType
     {
       public:
-        // clang-format off
         SCRUTINY_ENUM(eLoopType, uint_least8_t)
         {
             FIXED_FREQ,
             VARIABLE_FREQ
         };
-        // clang-format on
     };
 
     class LoopHandler
@@ -44,7 +42,6 @@ namespace scrutiny
         class Main2LoopMessageID
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eMain2LoopMessageID, uint_least8_t)
             {
 #if SCRUTINY_ENABLE_DATALOGGING
@@ -54,13 +51,11 @@ namespace scrutiny
                 DATALOGGER_DISARM_TRIGGER
 #endif
             };
-            // clang-format on
         };
 
         class Loop2MainMessageID
         {
           public:
-            // clang-format off
             SCRUTINY_ENUM(eLoop2MainMessageID, uint_least8_t)
             {
 #if SCRUTINY_ENABLE_DATALOGGING

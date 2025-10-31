@@ -35,7 +35,6 @@ namespace scrutiny
             class State
             {
               public:
-                // clang-format off
                 SCRUTINY_ENUM(eState, uint_least8_t)
                 {
                     IDLE, 
@@ -45,7 +44,6 @@ namespace scrutiny
                     ACQUISITION_COMPLETED, 
                     ERROR
                 };
-                // clang-format on
             };
 
             /// @brief Initializes the datalogger
